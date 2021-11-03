@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false, //不需要显示声明变量的 any 类型
+    "target": "es5", // 编译后的版本
+    "lib": [
+      "dom",  
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // 允许混合编译 js 文件
+    "skipLibCheck": true,
+    "esModuleInterop": true, //是否允许使用 commom.js 的 import 方式引入
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node", // 编译器的工作方式
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+}
