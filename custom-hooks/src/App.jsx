@@ -14,6 +14,7 @@ const useHackerNewsAPI = () => {
     const fetchData = async () => {
       setIsLoading(true);
       setIsError(false);
+      // 如果请求数据时发生错误就用 try catch 捕获
       try {
         const result = await axios(url);
         setData(result.data);
