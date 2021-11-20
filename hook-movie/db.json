@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "javaScript restful",
+      "author": "kyle simpson",
+      "": "2",
+      "id": 2
+    },
+    {
+      "title": "javaScript restful",
+      "author": "kyle simpson",
+      "id": 3
+    },
+    {
+      "title": "javaScript restful",
+      "author": "kyle simpson",
+      "id": 4
+    },
+    {
+      "title": "javaScript restful",
+      "author": "kyle simpson",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "username": "178683094asdasdasdasd4",
+      "password": "asdasdasdasd",
+      "id": 2
+    },
+    {
+      "title": "javaScript restful",
+      "author": "kyle simpson",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
