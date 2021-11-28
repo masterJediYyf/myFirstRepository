@@ -18,6 +18,7 @@
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.4.0",
     "styled-components": "^5.3.3",
+    "swiper": "^4.5.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

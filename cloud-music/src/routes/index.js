@@ -18,6 +18,7 @@ const AlbumComponent = lazy(() => import("../application/Album/"));
 const SingerComponent = lazy(() => import("./../application/Singer/"));
 const SearchComponent = lazy(() => import("./../application/Search/"));
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
     component: BlankLayout,

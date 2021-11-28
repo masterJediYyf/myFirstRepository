@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import Player from "../application/Player/index";
 
 function Home(props) {
-  const { route } = props;
+  const { route, history } = props;
 
   return (
     <div>
@@ -19,7 +19,7 @@ function Home(props) {
         <span className="title">云音悦</span>
         <span
           className="iconfont search"
-          onClick={() => props.history.push("/search")}
+          onClick={() => history.push("/search")}
         >
           &#xe62b;
         </span>
