@@ -1,21 +1,23 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import './App.css';
-import { useToggle } from 'ahooks';
+import Button from './Button';
 
 //  toggle 功能
 function App() {
-  // const [isOn, setIsOn] = useState(false);
-  //   const doToggle = () => {
-  //   setIsOn(!isOn);
-  // }
-  const [state, { toggle }] = useToggle();
+  const [count2, setCount2] = useState(0);
+
+  // useCallback 依赖的第二个参数变成了一个空的数组, 这就意味着这个方法没有依赖值, 将不会更新
+  const handleClickButton2 = useCallback(() => {
+    setCount2(() => count2 + 1)
+  },[]);
 
   return (
-    <div className="App">
-      <p>Effects: {`${state}`}</p>
-      {/* {isOn?'开启':"关闭"}  */}
-      <button onClick={toggle}>Toggle</button>
-    </div>
+    <Button
+      count={count2}
+      onClickButton={handleClickButton2}
+    >
+      Button2
+    </Button>
   )
 }
 

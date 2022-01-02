@@ -7,6 +7,8 @@ import Player from "../application/Player/index";
 function Home(props) {
   const { route, history } = props;
 
+  // console.log(props,'-----------------'); d
+
   return (
     <div>
       <Top>

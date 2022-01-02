@@ -4,3 +4,7 @@
   2. 生态系统内的 hooks react-router usehistory
   3. 自定义 hook 对某个功能的封装
   4. ahooks 来自阿里的 hooks 框架
+
+# react 优化
+
+1. useCallback 是要配合子组件的 shouldComponentUpdate 或者 React.memo 一起来使用, 否则就是反向优化

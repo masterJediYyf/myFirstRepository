@@ -10,9 +10,9 @@ function App() {
         
       }
     })
-        .then(data => {
-          console.log(data);
-        })
+    .then(data => {
+      console.log(data);
+    })
   },[])
 
   return (
