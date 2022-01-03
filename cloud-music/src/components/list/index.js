@@ -37,6 +37,6 @@ function RecommendList(props) {
       </List>
     </ListWrapper>
   );
-  }
+}
  
 export default withRouter(React.memo(RecommendList));
