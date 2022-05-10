@@ -7,26 +7,16 @@ interface Todo {
 }
 
 function App() {
-  const [todos, setTodos] = useState([]);
-  useEffect(() => {
-    fetch('http://localhost:4000/todo')
-      .then(data => data.json())
-      .then(data => {
-        console.log(data)
-        setTodos(data.todoList);
-      })
-  }, [])
-  return (
-    <div className="App">
-      <ul>
-        {
-          todos.map((todo: Todo, index) => (
-            <li key={index}>{todo.title}</li>
-          ))
-        }
-      </ul>
-    </div>
-  );
+    const [count, setCount] = useState(0);
+    
+    useEffect(() => {
+      setInterval(() => {setCount(count + 1)},1000);
+    },[])
+    return (
+      <div>
+        <p>You clicked {count} times</p>
+      </div>
+    );
 }
 
 export default App;

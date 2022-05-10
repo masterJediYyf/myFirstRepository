@@ -7,6 +7,7 @@ const defaultState = fromJS({
   loading: true
 });
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (state = defaultState, action) => {
   switch(action.type) {
     case actionTypes.CHANGE_ARTIST:

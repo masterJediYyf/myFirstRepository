@@ -98,7 +98,7 @@ function Singers(props){
       { enterLoading ? <EnterLoading><Loading></Loading></EnterLoading> : null}
       { renderRoutes(props.route.routes) }
     </div>
-  )
+  ) 
 }
 const mapStateToProps = (state) => ({
   alpha: state.getIn(['singers', 'alpha']),
@@ -110,6 +110,7 @@ const mapStateToProps = (state) => ({
   pageCount: state.getIn(['singers', 'pageCount']),
   songsCount: state.getIn(['player', 'playList']).size
 });
+
 const mapDispatchToProps = (dispatch) => {
   return {
     getHotSinger() {

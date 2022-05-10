@@ -78,6 +78,7 @@ export const PullDownLoading = styled.div`
 //   // eslint-disable-next-line
 // }, []);
 const Scroll = forwardRef((props, ref) => {
+  console.log(props,'----------------------');
   const [bScroll, setBScroll] = useState();
 
   const scrollContaninerRef = useRef();

@@ -1,4 +1,3 @@
-
 import { CHANGE_SONGS_OF_ARTIST, CHANGE_ARTIST, CHANGE_ENTER_LOADING } from './constants';
 import { fromJS } from 'immutable';
 import { getSingerInfoRequest } from './../../../api/request';
